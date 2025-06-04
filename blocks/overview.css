@@ -62,7 +62,7 @@
     }
 }
 
-/* Rango tablets pequeñas / móviles grandes: 320px a 544px */
+/*320px a 544px */
 @media screen and (min-width: 320px) and (max-width: 544px) {
     .overview {
         padding-left: 24px;
@@ -85,7 +85,7 @@
     }
 }
 
-/* Móviles muy pequeños: menos de 320px */
+/*320px */
 @media screen and (max-width: 319px) {
     .overview {
         padding-left: 16px;
