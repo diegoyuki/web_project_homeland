@@ -4,9 +4,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  padding-top: 150px;
-  padding-inline: 16px;
-  box-sizing: border-box;
+  padding-top: 50px;
 }
 
 .introduction__title {
@@ -35,7 +33,6 @@
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .introduction {
     padding-top: 100px;
-    padding-inline: 24px;
   }
 
   .introduction__title {
@@ -54,7 +51,6 @@
 @media screen and (max-width: 544px) {
   .introduction {
     padding-top: 80px;
-    padding-inline: 16px;
   }
 
   .introduction__title {
