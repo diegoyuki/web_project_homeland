@@ -33,12 +33,6 @@
   font-size: 18px;
 }
 
-.media {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 1rem;
-}
 
 .nft__image {
   width: 460px;
