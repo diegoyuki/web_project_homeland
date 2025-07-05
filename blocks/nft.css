@@ -8,11 +8,36 @@
   align-items: start;
 }
 
-.nft__media {
-  grid-column: 1 / 2;
-  display: grid;
-  grid-template-rows: auto auto;
-  align-self: center;
+.nft__title {
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+.nft__author {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.nft__author-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nft__author-name {
+  font-size: 18px;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
 }
 
 .nft__image {
@@ -33,6 +58,7 @@
   cursor: pointer;
   width: auto;
   transition: background 0.3s ease;
+  align-self: flex-start;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -41,42 +67,11 @@
   background: linear-gradient(to right, #0267D6 0%, #002F5A 100%);
 }
 
-.nft__title {
-  grid-column: 1 / 2;
-  font-size: 74px;
-  max-width: 460px;
-  text-align: left;
-}
-
-.nft__author {
-  grid-column: 2 / 3;
-  margin: 0;
-  font-size: 18px;
-  align-self: end;
-  padding-bottom: 25px;
-  text-align: left;
-}
-
-.nft__author-title {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #888;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.nft__author-name {
-  font-size: 18px;
-}
-
 .nft__description {
-  grid-column: 2 / 3;
   margin: 0 0 1rem 0;
   font-size: 18px;
   line-height: 1.6;
   max-width: 484px;
-  text-align: left;
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
