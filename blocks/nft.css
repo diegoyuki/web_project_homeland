@@ -25,7 +25,7 @@
 
 .nft__button {
   padding: 1rem 2rem;
-  background: linear-gradient(to right, #007BFF, #004080);
+  background: linear-gradient(to right, #0278FE 0%, #003A7B 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -38,7 +38,7 @@
 }
 
 .nft__button:hover {
-  background: linear-gradient(to right, #0066cc, #002f66);
+  background: linear-gradient(to right, #0267D6 0%, #002F5A 100%);
 }
 
 .nft__title {
@@ -57,7 +57,7 @@
   text-align: left;
 }
 
-.nft__author__title {
+.nft__author_title {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
@@ -66,7 +66,7 @@
   font-weight: bold;
 }
 
-.nft__author__name {
+.nft__author_name {
   font-size: 18px;
 }
 
@@ -79,7 +79,6 @@
   text-align: left;
 }
 
-/* === MÓVIL MEDIANO (481px – 767px): imagen/botón centrados, título/autores a la izquierda === */
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .nft {
     display: flex;
@@ -92,7 +91,7 @@
   .nft__title,
   .nft__author {
     width: 100%;
-    box-sizing: border-box; /* Padding dentro del ancho */
+    box-sizing: border-box; 
     text-align: center;
     margin: 0;
   }
@@ -104,7 +103,7 @@
 
   .nft__author {
     align-self: flex-start;
-    margin-top: 0.5rem; /* espacio entre título y autores */
+    margin-top: 0.5rem; 
   }
 
   .nft__media {
@@ -126,6 +125,11 @@
     margin: 1rem auto 0 auto;
     display: block;
     width: fit-content;
+    background: linear-gradient(to right, #0278FE 0%, #003A7B 100%);
+  }
+
+  .nft__button:hover {
+    background: linear-gradient(to right, #0267D6 0%, #002F5A 100%);
   }
 
   .nft__description {
@@ -135,7 +139,6 @@
   }
 }
 
-/* === MÓVIL PEQUEÑO (≤480px): columna, todo centrado excepto texto === */
 @media screen and (max-width: 480px) {
   .nft {
     display: flex;
@@ -154,7 +157,7 @@
   .nft__media {
     display: flex;
     flex-direction: column;
-    align-items: center; /* ✅ Esto alinea imagen + botón */
+    align-items: center; 
     width: 100%;
   }
 
@@ -169,9 +172,14 @@
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
     width: fit-content;
-    display: block;              /* ✅ Necesario para usar margin auto */
-    margin-left: auto;           /* ✅ Centrado horizontal */
+    display: block;            
+    margin-left: auto;           
     margin-right: auto;
+    background: linear-gradient(to right, #0278FE 0%, #003A7B 100%);
+  }
+
+  .nft__button:hover {
+    background: linear-gradient(to right, #0267D6 0%, #002F5A 100%);
   }
 
   .nft__author,
@@ -180,7 +188,7 @@
     width: 100%;
   }
 
-  .nft__author__name {
+  .nft__author_name {
     font-size: 16px;
   }
 
@@ -189,7 +197,6 @@
   }
 }
 
-/* === TABLET (768px - 1028px): igual que escritorio === */
 @media screen and (min-width: 768px) and (max-width: 1028px) {
   .nft {
     grid-template-columns: 1fr 1fr;
